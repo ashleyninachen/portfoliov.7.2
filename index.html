@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+  <title>ASHLEY CHEN</title>
+  <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+  <link rel="stylesheet" type="text/css" href="CSS/work.css" />
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans|Karla" rel="stylesheet">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon5.ico" type="image/x-icon">
+
+
+ </head>
+
+ <body>
+   <script type="text/javascript" src="Script/wz_tooltip.js"></script>
+
+   <div class="topnav" id="myTopnav">
+         <label class="hvr-underline-from-left">
+           <a href="index.html" class="active-page"><img src="images/round-brownblack.png"></a></label>
+
+           <a href="about.html" class="hvr-underline-from-left">About</a>
+           <a href="play.html" class="hrv-underline-from-left">Play</a>
+           <a href="index.html" class="hvr-underline-from-left">Work</a>
+
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+   </div>
+
+   <div class="bodycontainer">
+     <h1>Hello, my name is Ashley and I&nbsp;
+       <a href="about.html">
+         <div id="header" style="display:inline; border-bottom:3px solid #f2f2f2;">
+          design
+         </div>
+       </a>
+     </h1>
+
+     <div class="body" style="margin-bottom:-10px">
+       <br>
+       <p>
+       I bring unconventional and super-meta dialogue about design issues to understand user needs and explore the frontier of digital technology. I also indulge my peers with unsolicited dad jokes, unpredictable sass, and unparalleled work-ethic.
+       <br>
+       <br>
+       <br>
+     </p>
+    </div>
+
+<!--
+    <div align="center">Filter Projects: &nbsp;
+        <a href="film.html" class="hvr-underline-from-left">Play</a> &nbsp;
+        <a href="design.html" class="hvr-underline-from-left">Design</a>
+        <br>
+        <br>
+    </div>
+-->
+  </div>
+
+      <div class="grid" id="work">
+         <div class="section group" style="text-align: center;">
+           <div class="col span_1_of_3" id="kiva">
+             <div class="va">
+               <p>
+                 <a href="kiva.html">Microfinancing for the third-world<br>
+                   <br>
+                   <span class="tag">UI Design</span>
+                 </a>
+               </p></div>
+           </div>
+           <div class="col span_1_of_3" id="psy120">
+             <div class="va">
+               <p>
+                 <a href="psy120.html">Socially based Altruism<br>
+                   <br>
+                   <span class="tag">UX Research</span></a>
+                 </p></div>
+             </div>
+             <div class="col span_1_of_3" id="kinbaku">
+               <div class="va">
+                 <p>
+                   <a href="kinbaku.html">Bondage-inspired<br>skate shoes<br><br><span class="tag">Industrial Design</span></a>
+                 </p></div>
+               </div>
+            </div>
+        </div>
+<br>
+<br>
+<br>
+
+<div class="sidenav">
+  <li><a href="mailto:ashleyninachen@gmail.com"><i class="far fa-envelope"></i></a></li>
+  <li><a href="https://www.instagram.com/ashleey.jpg/"><i class="fab fa-instagram"></i></a></li>
+  <li><a href="https://twitter.com/ashleynchen"><i class="fab fa-twitter"></i></a></li>
+  <li><a href="https://linkedin.com/ashleyninachen"><i class="fab fa-linkedin-in"></i></a></li>
+</div>
+
+<div class="footer">Made with
+  <span class="ec ec-thinking"></span>
+  and
+  <span class="ec ec-sparkling-heart"></span>
+  © Ashley Chen</div>
+</div>
+
+</body>
+</head>
+
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script>
+    $(function(){
+        $('a').each(function(){
+            if ($(this).prop('href') == window.location.href) {
+                $(this).addClass('active'); $(this).parents('label').addClass('active');
+            }
+        });
+    });
+</script>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js">
+</script>
+
+
+<script> function myFunction() { var x = document.getElementById("myTopnav"); if (x.className === "topnav") { x.className += " responsive"; } else { x.className = "topnav"; } }
+ </script>
+
+ <script>
+    var text = ['design', 'research', 'sketch', 'have qualms where social media and tech meet','have crippling career anxiety', 'remember 100% of my dreams', 'am preoccupied with high expectations of myself', 'always say yes to food', 'am a Pisces sun, Scorpio moon, and Cancer rising']; function callMe(){
+        var myText = document.getElementById('header'); var curIdx = text.indexOf(myText.innerHTML); myText.innerHTML = text[(curIdx+1)%text.length];
+}
+
+setInterval(callMe,1000);
+</script>
