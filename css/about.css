@@ -68,6 +68,13 @@ ul{
     list-style-type: square;
     padding-left:15px;
 }
+/*a{
+    color:black;
+    right:0;
+    text-decoration:none;
+    font-weight:600;
+    margin:0px 0px 0px -10px;
+}*/
 a, a:active, a:visited{
     color:steelblue;
     text-decoration:none;
@@ -127,7 +134,7 @@ blockquote{
 }
 .topnav{
     position:fixed;
-    background-color:transparent;
+    background-color:#fff;
     top:0;
     width:93%;
     z-index: 999;
@@ -139,10 +146,10 @@ blockquote{
     left:0;
 }
 .topnav a:hover {
-  color:lightsteelblue;
+  color:steelblue;
 }
 .topnav .active {
-  color: peru;
+color: #800080;
   background-color:transparent;
   text-decoration:underline;
   text-underline-position:under;
@@ -226,21 +233,36 @@ input[type=checkbox]:checked ~ .contact a:hover {
 
 .topnav {
   overflow: hidden;
+  margin:auto -3% auto 1%;
+  opacity:0.8;
 }
 
 .topnav a {
     float:right;
     display: block;
     color: #000;
+    z-index:1000;
     text-align: center;
-    padding: 14px 10px;
+    padding: 12px 18px;
     text-decoration: none;
     font-size: .7em;
     font-family: 'Karla', sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+a {
+  z-index:9999;
+}
+#logo {
+  margin:auto auto auto -2.65%!important;
+}
 
+@media screen and (max-width:800px){
+  #logo {
+    padding:auto 0%!important;
+    margin:0%;
+  }
+}
 
 .topnav .icon{
     display:none;
@@ -282,7 +304,7 @@ h4 {
   .topnav.responsive .icon {
     position: absolute;
     background-color:#fff;
-    left:0;
+    right:0;
     top: 0;
   }
   .topnav.responsive a {
@@ -301,9 +323,9 @@ h4 {
     font-size:5em;
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ UNDERLINE FROM LEFT */
-.hvr-underline-from-left {
+/*.hvr-underline-from-left {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: left;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px transparent;
@@ -328,41 +350,45 @@ h4 {
 }
 .hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
   right: 0;
-}
+}*/
 
 /*~~~~~~~~~~~~~~~~~SIDE NAV~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .sidenav{
     position:fixed;
     height:100%;
-    width:15%;
+    width:8%;
     z-index:1;
     top:0;
     left:0;
     background-color:transparent;
     overflow-x:hidden;
-    padding-top:250px;
+    padding-top:230px;
     cursor:hand;
 }
 .sidenav a {
-  padding:6px 8px 6px 40px;
+  padding:6px 8px 30px 40px;
   text-decoration:none;
   font-size:25px;
   color:gainsboro;
   display:block;
 }
 .sidenav a:hover {
-  color:steelblue !important;
+  color:steelblue!important;
 }
 @media screen and (max-width:800px) {
   .sidenav a {
     font-size:20px;
-    padding:6px 8px 6px 15px;
+    padding:6px 8px 30px 15px;
   }
 }
 @media screen and (max-width:400px) {
 	.sidenav  {
-		width:15%;
+		width:12%;
 	}
+  .sidenav a {
+    font-size:18px!important;
+    margin:auto auto auto -15px;
+  }
 }
 li {
   text-decoration:none;
@@ -461,7 +487,7 @@ li {
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ UNDERLINE FROM LEFT */
-.hvr-underline-from-left {
+/*.hvr-underline-from-left {
   display: inline-block;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
@@ -490,7 +516,7 @@ li {
 .hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
   right: 0;
 }
-
+*/
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ BOX SHADOWS */
 .box {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
@@ -544,6 +570,38 @@ li {
 	margin:90px 15px 50px 15px;
 	padding: 0px;
 }*/
+/*~~~~~~~~~~~~~~~~~~~FADEIN ANIMATION~~~~~~~~~~~~~~~~~~~~~*/
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.fade-in.one {
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fade-in.two {
+  -webkit-animation-delay: 1.0s;
+  -moz-animation-delay:1.0s;
+  animation-delay: 1.0s;
+}
+
 
 /*~~~~~~~~~~~~~~~PLAY GRID~~~~~*/
 .play-row {
@@ -552,7 +610,7 @@ li {
   position: relative;
   width: 90%;
   height: 90%;
-  margin:90px 50px 30px 90px;
+  margin:90px 50px 30px 80px;
   padding: 0px;
   z-index:0;
 }
@@ -587,4 +645,25 @@ li {
   .play-row{
     margin:90px 5px 30px 25px;
   }
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~SCROLL TO TOP BUTTON~~~~~~~~~~~~*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 13px;
+  right: 13px;
+  z-index: 99;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  background-color:thistle;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 150px;
+}
+
+#myBtn:hover {
+  background-color: #555;
 }

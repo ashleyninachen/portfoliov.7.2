@@ -16,6 +16,14 @@ body{
 p {
   font-family:"Work Sans";
 }
+@media screen and (max-width:400px){
+  p {
+    margin-left:5%!important;
+  }
+}
+b {
+  color:#3FB5E5;
+}
 h1{
     font-family: 'Karla', sans-serif;
     font-size: 1.5em;
@@ -27,6 +35,7 @@ h1{
 @media screen and (max-width:600px){
   h1 {
     margin-top:8%;
+    padding: auto 5% auto 5%;
   }
 }
 
@@ -35,15 +44,24 @@ h3{
     font-family: 'Karla', sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
-    border-bottom:3px solid #f2f2f2;
+    border-bottom:3px solid gainsboro;
     padding-bottom:3px;
 }
 h4{
-    font-size:.75em;
+    font-size:1em;
     font-family: 'Karla', sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color:lightsteelblue;
+    color:steelblue;
+    margin:-1%;
+}
+h5{
+    font-family: 'Karla', sans-serif;
+    font-size: 1.5em;
+    line-height: 200%;
+    font-weight:800;
+    color:#CD5C5C;
+    text-align: center;
 }
 ul{
     list-style-type: square;
@@ -53,7 +71,7 @@ a{
     color:black;
     text-decoration:none;
     font-weight:600;
-    margin:0px -5px 0px -5px;
+    margin:0px -5px 0px -3px;
 }
 
 a:active, a:visited{
@@ -61,8 +79,9 @@ a:active, a:visited{
     text-decoration:none;
     font-weight:600;
 }
-a:hover.deepchestnut {
-    color:#b94e48;
+a:hover.skyblue {
+    color:#3FB5E5;
+    text-decoration:underline;
 }
 a:hover.meatbrown{
     color:#e5c169;
@@ -90,6 +109,55 @@ blockquote{
     font-weight:400;
     font-size:.75em;
 }
+#logo {
+  padding:10%!important;
+  margin:-20%!important;
+}
+@media screen and (max-width:800px){
+  #logo {
+    padding:40% 5% 3% 15%!important;
+    margin:-20%;
+  }
+}
+/*~~~~~~~~~~~~~~~~~~~FADEIN ANIMATION~~~~~~~~~~~~~~~~~~~~~*/
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.fade-in.one {
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fade-in.two {
+  -webkit-animation-delay: 0.8s;
+  -moz-animation-delay:0.8s;
+  animation-delay: 0.8s;
+}
+
+.fade-in.three {
+  -webkit-animation-delay: 1.2s;
+  -moz-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SCROLLBAR CSS */
 ::-webkit-scrollbar-track{
 	background-color:none;
@@ -112,7 +180,6 @@ blockquote{
 }
 .topnav{
     position:fixed;
-    background-color:transparent;
     top:0;
     width:96%;
     z-index: 999;
@@ -120,10 +187,10 @@ blockquote{
     font-family: 'Karla', sans-serif;
     text-align:left;
     font-weight:800;
-    padding: 1%;
+    padding: 1% 1% 1% 1%;
 }
 .topnav a:hover {
-  color:steelblue;
+  color:steelblue!important;
 }
 
 .body{
@@ -140,6 +207,7 @@ blockquote{
     margin:auto 40% auto -20%;
   }*/
 }
+
 @media screen and (max-width:600px;) {
   .body {
     margin:0% 20% 0% 20%;
@@ -151,6 +219,12 @@ blockquote{
     margin-left:10%;
     background-color:transparent;
 }
+@media screen and (max-width:400px){
+  .grid{
+    margin-left:15%!important;
+  }
+}
+
 
 input[type=checkbox] {
    position: absolute;
@@ -210,6 +284,7 @@ input[type=checkbox]:checked ~ .contact a:hover {
 
 .topnav {
   overflow: hidden;
+  padding:1%;
 }
 
 .topnav a {
@@ -217,7 +292,7 @@ input[type=checkbox]:checked ~ .contact a:hover {
     display: block;
     color: #000;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 24px;
     text-decoration: none;
     font-size: .7em;
     font-family: 'Karla', sans-serif;
@@ -225,7 +300,7 @@ input[type=checkbox]:checked ~ .contact a:hover {
     letter-spacing: 1px;
 }
 .topnav .active {
-  color: peru;
+  color: #800080;
   background-color:transparent;
   text-decoration:underline;
   text-underline-position:under;
@@ -249,13 +324,17 @@ input[type=checkbox]:checked ~ .contact a:hover {
     font-size:.8em;
     margin-left:1%;
 }*/
-h4 {
+
+b.thick {
+  font-weight:bold;
+}
+/*h4 {
   visibility:hidden;
   display:none
-}
+}*/
 .body{
     width:80%;
-    margin:11%;
+    margin:auto 11%;
     text-align:center;
     margin-top:-20px;
 }
@@ -317,41 +396,68 @@ h4 {
     width:97%;
   }
 }
+td {
+  padding:3%
+}
+@media screen and (max-width:600px){
+  td {
+    display:block;
+    width:100%;
+    padding: 10% 0 5% 0!important;
+  }
+}
 
 /*~~~~~~~~~~~~~~~~~SIDE NAV~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .sidenav{
     position:fixed;
     height:100%;
-    width:15%;
+    width:8%!important;
     z-index:1;
     top:0;
     left:0;
     background-color:transparent;
     overflow-x:hidden;
-    padding-top:250px;
+    padding-top:230px!important;
     cursor:hand;
 }
 .sidenav a {
-  padding:7px 8px 6px 45px;
+  padding:6px 8px 30px 40px!important;
   text-decoration:none;
   font-size:25px;
   color:gainsboro;
   display:block;
 }
 .sidenav a:hover {
-  color:#4682B4 !important;
+  color:steelblue!important;
 }
 @media screen and (max-width:800px) {
+  .sidenav {
+    padding-top:230px!important;
+  }
   .sidenav a {
     font-size:20px;
-    padding:6px 8px 6px 15px;
+    padding:6px 8px 30px 30px!important;
+  }
+}
+@media screen and (max-width:600px){
+  .sidenav {
+    width:10%!important;
+    padding-top:230px!important;
+  }
+  .sidenav a {
+    padding:6px 8px 30px 20px!important;
   }
 }
 @media screen and (max-width:400px) {
 	.sidenav  {
-		width:15%;
+		width:12%!important;
 	}
+  .sidenav a {
+    font-size:18px;
+    padding:auto auto!important;
+  }
 }
+
 li {
   text-decoration:none;
   list-style-type:none;
@@ -366,15 +472,49 @@ li {
     align-items: center;
     overflow: hidden;
     width:100%;
-    height:440px;
+    height:400px;
+    margin-top:3%;
+    margin-left:1%;
+    margin-bottom:-2%;
+}
+
+@media screen and (max-width:800px) {
+  .mainimgscroll {
+    margin-top:3%;
+    margin-bottom:-5%;
+    margin-left:4%;
+  }
+}
+@media screen and (max-width:600px){
+  .mainimgscroll {
+    display:flex;
+    height:300px;
+    margin-top:auto;
+    margin-left:3%;
+  }
+}
+@media screen and (max-width:400px){
+  .mainimgscroll {
+    display:flex;
+    height:300px;
+    margin-top:auto;
+    margin:left:2%;
+  }
 }
 .mainimgscroll img {
     flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%;
+    min-width: 80%;
+    min-height: 50%;
 }
-#deepchestnut{
-    background-color: #c16e69;
+picture {
+  align-items:center;
+  justify-content:center;
+  margin-left:auto;
+  display:flex;
+  overflow:hidden;
+}
+#skyblue{
+    background-color: #3FB5E5;
 }
 #meatbrown{
     background-color:#e5c169;
@@ -384,7 +524,7 @@ li {
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ UNDERLINE FROM LEFT */
-.hvr-underline-from-left {
+/*.hvr-underline-from-left {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -412,11 +552,11 @@ li {
 .hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
   right: 0;
 }
-
+*/
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ BOX SHADOWS */
 .box {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
+  border-radius: 10px;
   -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
@@ -442,3 +582,25 @@ li {
 
 .box:hover::after {
     opacity: 1;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~SCROLL TO TOP BUTTON~~~~~~~~~~~~*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 99;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  background-color:thistle;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 150px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}

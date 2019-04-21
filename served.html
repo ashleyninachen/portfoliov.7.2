@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+  <title>ASHLEY CHEN</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/work.css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans|Karla" rel="stylesheet">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon5.ico" type="image/x-icon">
+
+ <body onload="document.body.style.opacity='1'">
+   <div class="topnav" id="myTopnav">
+     <label class="hvr-underline-from-left">
+       <a href="index.html"><img src="images/round-brownblack.png"></a>
+     </label>
+     &nbsp; &nbsp; &nbsp;
+
+     <a href="about.html" class="hvr-underline-from-left">About</a>
+     <a href="play.html" class="hrv-underline-from-left">Play</a>
+     <a href="index.html" class="hvr-underline-from-left">Work</a>
+
+
+     <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+   </div>
+
+
+   <div class="bodycontainer">
+
+     <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
+
+     <h1>
+       <span id="skyblue">&nbsp;Serv'd&nbsp;</span>
+       &nbsp; Making your restaurant server, almost redundant.
+     </h1>
+     <h4 align="center">AR/UI Mobile Design &nbsp; • &nbsp; Mockups and Wireframes &nbsp;</h4>
+     <div class="mainimgscroll">
+       <picture>
+         <source srcset="ServedMobile-Images/served-banner-small.png" media="(max-width:800px)" align="center">
+        <source srcset="ServedMobile-Images/served-banner-v.2.png" align="center">
+        <img src="ServedMobile-Images/served-banner-v.2.png" style="width:50%;">
+      </picture>
+     </div>
+
+     <p align="center"> TEAM:  Ashley Chen (Designer), CEO X, Developer X</p>
+     <br><br>
+
+     <div class="body">
+       <h3>Context</h3>
+       <p>Serv'd is a concept app that arose from a contemporary desire- to know what your food looks like in 3D before you order it. Serv'd is a team in UC Irvine's highly coveted Wayfinder Incubator; after their original designer- who initially conducted the UX research- left, I joined the team to help <b>design a mobile application with AR capabilities</b>.
+       </p>
+       <p> My designs for Serv'd are currently under NDA, so please reach out to me for more deets! </p>
+
+       <p>In the meantime, this page is under construction for another </p>
+        <p id="countdown" style="font-size:30px"></p>
+
+
+       <!--<h1>Play with this project on <a href="https://www.figma.com/"> target="_blank" class="skyblue">Figma</a> or <a href="https://marvelapp.com/" target="_parent" class="skyblue">MarvelApp</a>.
+       </h1>-->
+
+       <br>
+       <h3>What I Did</h3>
+       <table style="width:100%;" align="center"> <tbody> <tr> <td width="50%" style="vertical-align: top">
+         <h4>UI Mockups and Wireframes</h4>
+         <ul>
+           <li><b>Built interactive UI</b> using Illustrator and InvisionApp (developer uses PC)
+           </li>
+           <li>
+             <b>Reimagined</b> mobile design from existing apps
+           </li>
+           <li>
+             Adapted designs multiple times based off of <b>user feedback</b>
+           </li>
+         </ul>
+       </td>
+     </tr>
+   </tbody>
+ </table>
+</div>
+
+
+</div>
+
+<div class="sidenav">
+  <a href="mailto:ashleyninachen@gmail.com"><i class="far fa-envelope"></i></a>
+  <a href="https://www.instagram.com/ashleey.jpg/"><i class="fab fa-instagram"></i></a>
+  <a href="https://twitter.com/ashleynchen"><i class="fab fa-twitter"></i></a>
+  <a href="https://linkedin.com/ashleyninachen"><i class="fab fa-linkedin-in"></i></a>
+</div>
+
+      <!--<div class="footer">Made with
+        <span class="ec ec-thinking"></span>
+        and
+        <span class="ec ec-sparkling-heart"></span>
+        © Ashley Chen</div>
+      </div>-->
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<script>
+var countDownDate = new Date("May 30, 2019 15:37:25").getTime();
+
+var x = setInterval(function() {
+
+  var now = new Date().getTime();
+
+  var distance = countDownDate - now;
+
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "Whoops, I miscalculated! It'll be up soon";
+  }
+}, 1000);
+</script>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js">
+</script>
+
+<script> function myFunction() {
+    var x = document.getElementById("myTopnav"); if (x.className === "topnav") { x.className += " responsive"; } else { x.className = "topnav"; } }
+</script>
+
+</body>
+</html>

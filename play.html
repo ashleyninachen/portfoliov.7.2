@@ -17,41 +17,44 @@
 </head>
 
 <body>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
+
   <div class="topnav" id="myTopnav">
-    <label class="hvr-underline-from-left">
+    <label class="hvr-underline-from-left" id="logo">
       <a href="index.html"><img src="images/round-brownblack.png"></a>
     </label>
 
-    <a href="about.html" class="hvr-underline-from-left">About</a>
-    <a href="play.html" class="hrv-underline-from-left">Play</a>
-    <a href="index.html" class="hvr-underline-from-left">Work</a>
+    <a href="about.html">About</a>
+    <a href="play.html">Play</a>
+    <a href="index.html">Work</a>
 
 
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
   </div>
 
   <div class="play-row">
-    <div class="play-column">
-      <img src="images/photogenic-corner.jpg">
-      <img src="images/ginza-MomA.jpg">
-      <img src="images/santa-barbara-museum.jpg">
-      <img src="images/kyoto.jpg">
-      <img src="images/tokyo-suburb-2.jpg">
+    <div class="play-column fade-in three">
+      <img src="Film-Photography/photogenic-corner.jpg">
+      <img src="Film-Photography/ginza-MomA.jpg">
+      <img src="Film-Photography/santa-barbara-museum.jpg">
+      <img src="Film-Photography/kyoto.jpg">
+      <img src="Film-Photography/tokyo-suburb-2.jpg">
 
     </div>
-    <div class="play-column">
-      <img src="images/photogenic-staircase.jpg">
-      <img src="images/osaka-dusk.jpg">
-      <img src="images/getty-center.jpeg">
-      <img src="images/kiyomizu-dera.jpg">
-      <img src="images/shibuya-evening.jpg">
+    <div class="play-column fade-in one">
+      <img src="Film-Photography/photogenic-staircase.jpg">
+      <img src="Film-Photography/osaka-dusk.jpg">
+      <img src="Film-Photography/getty-center.jpeg">
+      <img src="Film-Photography/kiyomizu-dera.jpg">
+      <img src="Film-Photography/shibuya-evening.jpg">
     </div>
-    <div class="play-column">
-      <img src="images/subway.jpg">
-      <img src="images/blessed.jpg">
-      <img src="images/getty-2.jpg">
-      <img src="images/osaka-dawn.jpg">
-      <img src="images/osaka-sunset.jpg">
+    <div class="play-column fade-in two">
+      <img src="Film-Photography/subway.jpg">
+      <img src="Film-Photography/blessed.jpg">
+      <img src="Film-Photography/getty-2.jpg">
+      <img src="Film-Photography/osaka-dawn.jpg">
+      <img src="Film-Photography/osaka-sunset.jpg">
 
     </div>
   </div>
@@ -72,7 +75,26 @@
 
 </body>
 
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
 <script>
     $(function(){
         $('a').each(function(){
@@ -86,7 +108,7 @@
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setAccount', 'UA-121952916-1']);
   _gaq.push(['_setDomainName', 'jqueryscript.net']);
   _gaq.push(['_trackPageview']);
 

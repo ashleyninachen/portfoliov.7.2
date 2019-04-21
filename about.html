@@ -16,7 +16,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
+<body onload="document.body.style.opacity='1'">
   <div class="topnav" id="myTopnav">
     <label class="hvr-underline-from-left">
       <a href="index.html"><img src="images/round-brownblack.png">
@@ -32,25 +32,28 @@
   </div>
 
 <section id="container">
-  <div id="top-div">
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
+
+  <div id="top-div" class="fade-in one">
     <img src="images/ash.jpg">
   </div>
-  <div id="bottom-div">
+  <div id="bottom-div" class="fade-in two">
     <h1>
       Hello, I’m Ashley Chen.
     </h1>
     <p>
       <br>
-      I've earned my undergraduate degree in <a href="http://www.ucsb.edu/psychology" target="_blank" class="deepchestnut">Psychology</a> at the University of California, Santa Barbara (UCSB) and the <a href="http://uci.edu/extension-continuing-education/web-design" target="_blank" class="meatbrown"> UX/UI Design Certification</a> at the University of California, Irvine (UCI). Aaaand here I am, finally!
+      I've earned my undergraduate degree in <a href="http://www.ucsb.edu/psychology" target="_blank" class="deepchestnut">Psychology</a> at the University of California, Santa Barbara (UCSB) and the   <a href="http://uci.edu/extension-continuing-education/web-design" target="_blank" class="meatbrown"> UX/UI Design Certification</a> at the University of California, Irvine (UCI). Aaaand here I am, finally!
       </br>
       <br>
-      I love the intersection of design, politics, media, and ever-changing popular culture. The end goal is to capture the human experience on the digital frontier and spread the word on what I've found along the way.
+      I love the intersection of design, politics, media, and ever-changing popular culture. I aspire to dive into interaction design and front-end development (I coded this entirely from scratch!), and get to a point where I can speak on behalf of the digital frontier.
     </br>
     <br>
-      I spend my free time curating extremely specific playlists and ripping them off Youtube circa 2008, watching Ted Talks and crime documentaries, and tending to my two (very needy) cats <span class="ec ec-cat"></span>. Eventually, I’d like to learn ceramics and exercise more than 3x/month. Willingly.
+      I spend my free time curating extremely specific playlists and ripping them off Youtube circa 2008, watching Ted Talks and crime documentaries, playing with creative UI designs, and tending to my two (very needy) cats <span class="ec ec-cat"></span>. Eventually, I'd like to learn ceramics and exercise more than 3x/month. Willingly.
     </br>
     <br>
-      I'm open to new opportunities in Orange County and Los Angeles starting April 2019.
+      I'm open to new opportunities in Los Angeles and Orange County starting April 2019.
     </br>
     <br>
     View my less flashy paper trail here: <a href="AshleyChen_resume.pdf" target="_blank" class="paper-trail">Résumé</a>
@@ -82,6 +85,23 @@
 
 </body>
 
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script>
