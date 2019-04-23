@@ -62,7 +62,6 @@
   <div class="sidenav">
     <a href="mailto:ashleyninachen@gmail.com"><i class="far fa-envelope"></i></a>
     <a href="https://www.instagram.com/ashleey.jpg/"><i class="fab fa-instagram"></i></a>
-    <a href="https://twitter.com/ashleynchen"><i class="fab fa-twitter"></i></a>
     <a href="https://linkedin.com/ashleyninachen"><i class="fab fa-linkedin-in"></i></a>
   </div>
 
@@ -86,10 +85,9 @@ function scrollFunction() {
     document.getElementById("myBtn").style.display = "none";
   }
 }
-
 function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+
+     $('html, body').animate({scrollTop:0}, 'slow');
 }
 </script>
 

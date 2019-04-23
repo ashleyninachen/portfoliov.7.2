@@ -39,7 +39,7 @@
        &nbsp; Making your restaurant server, almost redundant.
      </h1>
      <h4 align="center">AR/UI Mobile Design &nbsp; • &nbsp; Mockups and Wireframes &nbsp;</h4>
-     <div class="mainimgscroll">
+     <div class="mainimgscroll fade-in one">
        <picture>
          <source srcset="ServedMobile-Images/served-banner-small.png" media="(max-width:800px)" align="center">
         <source srcset="ServedMobile-Images/served-banner-v.2.png" align="center">
@@ -52,7 +52,7 @@
 
      <div class="body">
        <h3>Context</h3>
-       <p>Serv'd is a concept app that arose from a contemporary desire- to know what your food looks like in 3D before you order it. Serv'd is a team in UC Irvine's highly coveted Wayfinder Incubator; after their original designer- who initially conducted the UX research- left, I joined the team to help <b>design a mobile application with AR capabilities</b>.
+       <p>Serv'd is a concept app that arose from a contemporary desire- to know what your food looks like in 3D before you order it. Serv'd is a team in UC Irvine's highly coveted Wayfinder Incubator; after their original designer- who initially conducted the UX research- left, I joined the team as their co-founder to translate the research and prior data to <b>design a mobile application with AR capabilities</b>.
        </p>
        <p> My designs for Serv'd are currently under NDA, so please reach out to me for more deets! </p>
 
@@ -83,22 +83,24 @@
  </table>
 </div>
 
+<div class="footer-project">Made with
+  <span class="ec ec-thinking"></span>
+  and
+  <span class="ec ec-sparkling-heart"></span>
+  © Ashley Chen
+</div>
 
 </div>
 
 <div class="sidenav">
   <a href="mailto:ashleyninachen@gmail.com"><i class="far fa-envelope"></i></a>
   <a href="https://www.instagram.com/ashleey.jpg/"><i class="fab fa-instagram"></i></a>
-  <a href="https://twitter.com/ashleynchen"><i class="fab fa-twitter"></i></a>
   <a href="https://linkedin.com/ashleyninachen"><i class="fab fa-linkedin-in"></i></a>
 </div>
 
-      <!--<div class="footer">Made with
-        <span class="ec ec-thinking"></span>
-        and
-        <span class="ec ec-sparkling-heart"></span>
-        © Ashley Chen</div>
-      </div>-->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+crossorigin="anonymous"></script>
 <script>
 window.onscroll = function() {scrollFunction()};
 
@@ -111,8 +113,8 @@ function scrollFunction() {
 }
 
 function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+
+     $('html, body').animate({scrollTop:0}, 'slow');
 }
 </script>
 

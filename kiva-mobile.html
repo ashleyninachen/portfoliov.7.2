@@ -41,7 +41,7 @@
        &nbsp; Re-imaginging micro-loans in a digital world
      </h1>
      <h4 align="center">UI Mobile Design &nbsp; • &nbsp; Mockups and Wireframes &nbsp;</h4>
-     <div class="mainimgscroll">
+     <div class="mainimgscroll fade-in one">
        <picture>
          <source srcset="KivaMobile-Images/kiva-mobile-banner-small.png" media="(max-width:800px)" align="center">
         <source srcset="KivaMobile-Images/kiva-mobile-banner-v.5.png" align="center">
@@ -158,12 +158,17 @@
         <br>
         <br>
 
+        <div class="footer-project">Made with
+          <span class="ec ec-thinking"></span>
+          and
+          <span class="ec ec-sparkling-heart"></span>
+          © Ashley Chen
+        </div>
   </div>
 
 <div class="sidenav">
   <a href="mailto:ashleyninachen@gmail.com"><i class="far fa-envelope"></i></a>
   <a href="https://www.instagram.com/ashleey.jpg/"><i class="fab fa-instagram"></i></a>
-  <a href="https://twitter.com/ashleynchen"><i class="fab fa-twitter"></i></a>
   <a href="https://linkedin.com/ashleyninachen"><i class="fab fa-linkedin-in"></i></a>
 </div>
 
@@ -173,7 +178,9 @@
         <span class="ec ec-sparkling-heart"></span>
         © Ashley Chen</div>
       </div>-->
-
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"></script>
 <script>
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
@@ -187,8 +194,8 @@ if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
 }
 
 function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+
+     $('html, body').animate({scrollTop:0}, 'slow');
 }
 </script>
 

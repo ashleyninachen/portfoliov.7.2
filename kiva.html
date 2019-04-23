@@ -41,7 +41,7 @@
        &nbsp; Creating opportunity for the Individual, for the Community
      </h1>
      <h4 align="center">UI/UX Web Design &nbsp; • &nbsp; Mockups and Wireframes &nbsp; • &nbsp; User Testing</h4>
-     <div class="mainimgscroll">
+     <div class="mainimgscroll fade-in one">
        <picture>
          <source srcset="KivaWeb-Images/kiva-banner-small.png" media="(max-width:800px)" align="center">
         <source srcset="KivaWeb-Images/kiva-banner-v.3.png" align="center">
@@ -160,38 +160,42 @@
         <br>
         <br>
 
+        <div class="footer-project">Made with
+          <span class="ec ec-thinking"></span>
+          and
+          <span class="ec ec-sparkling-heart"></span>
+          © Ashley Chen
+        </div>
 </div>
 
 <div class="sidenav">
   <a href="mailto:ashleyninachen@gmail.com"><i class="far fa-envelope"></i></a>
   <a href="https://www.instagram.com/ashleey.jpg/"><i class="fab fa-instagram"></i></a>
-  <a href="https://twitter.com/ashleynchen"><i class="fab fa-twitter"></i></a>
   <a href="https://linkedin.com/ashleyninachen"><i class="fab fa-linkedin-in"></i></a>
 </div>
 
-      <!--<div class="footer">Made with
-        <span class="ec ec-thinking"></span>
-        and
-        <span class="ec ec-sparkling-heart"></span>
-        © Ashley Chen</div>
-      </div>-->
-<script>
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+crossorigin="anonymous"></script>
 
-function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("myBtn").style.display = "block";
-  } else {
-    document.getElementById("myBtn").style.display = "none";
-  }
-}
+      <script>
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
 
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-</script>
+      function scrollFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+          document.getElementById("myBtn").style.display = "block";
+        } else {
+          document.getElementById("myBtn").style.display = "none";
+        }
+      }
+
+      function topFunction() {
+
+           $('html, body').animate({scrollTop:0}, 'slow');
+      }
+
+      </script>
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js">
 </script>

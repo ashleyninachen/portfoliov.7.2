@@ -49,9 +49,9 @@
        I bring unconventional and super-meta dialogue about design issues to understand user needs and explore the frontier of digital technology. I also indulge my peers with unsolicited dad jokes, unpredictable sass, and unparalleled work-ethic.
        <br>
        <br>
-       <br>
      </p>
-    </div>
+      <h2> My projects &#65516;</h2>
+   </div>
 
 <!--
     <div align="center">Filter Projects: &nbsp;
@@ -67,55 +67,56 @@
   </div>
 
       <div class="grid" id="work">
-         <div class="section group" style="text-align: center;">
-           <div id="kiva" class="col span_1_of_3 fade-in one">
-             <div class="va">
-               <p>
-                 <a href="kiva.html">Microfinancing for the third-world<br>
+
+           <div id="container-index" style="width:100%;">
+             <div class="fade-in one, container-index">
+               <a href="kiva.html">
+                 <picture>
+                   <source srcset="KivaWeb-Images/kivaweb-xs-cover.png" media="(max-width:800px)">
+                  <source srcset="KivaWeb-Images/kivaweb-cover.png">
+                  <img src="KivaWeb-Images/kivaweb-cover.png" style="width:100%;">
+                </picture>
+                </a>
+              </div>
+
+           <div class="fade-in two, container-index">
+                 <a href="kiva-mobile.html">
+                   <picture>
+                     <source srcset="KivaMobile-Images/kivamobile-xs-cover.png" media="(max-width:800px)">
+                    <source srcset="KivaMobile-Images/kivamobile-cover.png">
+                   <img src="KivaMobile-Images/kivamobile-cover.png" style="width:100%;"><br>
                    <br>
-                   <span class="tag">UX Research / UI Design</span>
                  </a>
-               </p>
-             </div>
-           </div>
-           <div id="kivamobile" class="col span_1_of_3 fade-in two">
-             <div class="va">
-               <p>
-                 <a href="kiva-mobile.html">Opportunity: mobilised<br>
-                   <br>
-                   <span class="tag">UI Design</span></a>
-                 </p>
                </div>
-             </div>
-             <div id="served" class="col span_1_of_3 fade-in three">
-               <div class="va">
-                 <p>
-                   <a href="served.html">Bringing your menu to "life"<br><span class="tag">UI / AR Design</span></a>
-                 </p>
+
+            <div class="fade-in three, container-index">
+                  <a href="served.html">
+                    <picture>
+                      <source srcset="ServedMobile-Images/served-xs-cover.png" media="(max-width:800px)">
+                     <source srcset="ServedMobile-Images/served-cover.png"><img src="ServedMobile-Images/served-cover.png" style="width:100%;">
                </div>
             </div>
           </div>
-      </div>
-<br>
-<br>
-<br>
 
 <div class="sidenav">
   <li><a href="mailto:ashleyninachen@gmail.com" class="steelblue"><i class="far fa-envelope"></i></a></li>
   <li><a href="https://www.instagram.com/ashleey.jpg/" class="steelblue"><i class="fab fa-instagram"></i></a></li>
-  <li><a href="https://twitter.com/ashleynchen" class="steelblue"><i class="fab fa-twitter"></i></a></li>
   <li><a href="https://linkedin.com/ashleyninachen" class="steelblue"><i class="fab fa-linkedin-in"></i></a></li>
 </div>
+ <br>
+ <br>
+ <br>
 
-
+ <div class="footer">
+   Made with
+   <span class="ec ec-thinking"></span>
+   and
+   <span class="ec ec-sparkling-heart"></span>
+   © Ashley Chen</div>
+ </div>
 </body>
 
-<div class="footer">Made with
-  <span class="ec ec-thinking"></span>
-  and
-  <span class="ec ec-sparkling-heart"></span>
-  © Ashley Chen</div>
-</div>
+
 
 </head>
 
@@ -132,11 +133,10 @@ function scrollFunction() {
 }
 
 function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
 
-
+     $('html, body').animate({scrollTop:0}, 'slow');
 }
+
 </script>
 
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -167,7 +167,7 @@ $(document).ready(function(){
  </script>
 
  <script>
-    var text = ['design', 'research', 'sketch', 'exist where emotions meet technology','have crippling career anxiety', 'remember 100% of my dreams', 'have high expectations of myself', 'always say yes to food', 'am a Pisces sun, Scorpio moon, Cancer rising']; function callMe(){
+    var text = ['design', 'research', 'sketch', 'am a recovering perfectionist','have crippling career anxiety', 'remember 100% of my dreams', 'have high expectations of myself', 'always say yes to food', 'am a Pisces sun, Scorpio moon, Cancer rising']; function callMe(){
         var myText = document.getElementById('header'); var curIdx = text.indexOf(myText.innerHTML); myText.innerHTML = text[(curIdx+1)%text.length];
 }
 

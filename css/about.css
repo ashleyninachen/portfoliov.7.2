@@ -40,6 +40,9 @@ p {
     height:auto;
   }
 }
+b {
+  color:#3FB5E5;
+}
 h1{
     font-family: 'Karla', sans-serif;
     font-size: 2em;
@@ -86,7 +89,7 @@ a:hover.deepchestnut {
 a:hover.meatbrown{
     color:#e5c169;
 }
-a:hover.jet{
+a:hover.paper-trail{
     color:#2f5e7c;
 }
 .peru {
@@ -149,7 +152,7 @@ blockquote{
   color:steelblue;
 }
 .topnav .active {
-color: #800080;
+color: #4169E1;
   background-color:transparent;
   text-decoration:underline;
   text-underline-position:under;
@@ -162,6 +165,7 @@ color: #800080;
     width:80%;
     margin-left:10%;
 }
+
 .footer{
     position:static;
     bottom:0;
@@ -185,7 +189,7 @@ label {
     font-family: 'Karla', sans-serif;
     text-align:left;
     font-weight:800;
-    margin: 0% -2% -2% -2.55%;
+    margin: -0.3% -2% -2% -2.35%;
 }
 @media screen and (max-width:800px) {
   label {
@@ -486,6 +490,7 @@ li {
     background-color:#2f5e7c;
 }
 
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ UNDERLINE FROM LEFT */
 /*.hvr-underline-from-left {
   display: inline-block;
@@ -657,7 +662,7 @@ li {
   font-size: 15px;
   border: none;
   outline: none;
-  background-color:thistle;
+  background-color:#717abb;
   color: #fff;
   cursor: pointer;
   padding: 10px;
