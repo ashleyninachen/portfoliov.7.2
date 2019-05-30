@@ -193,6 +193,14 @@ li {
 	z-index:-999;
 }
 
+picture {
+  align-items:center;
+  justify-content:center;
+  margin-left:auto;
+  display:flex;
+  overflow:hidden;
+}
+
 
 /*#kiva:hover{
     background-image: url('KivaWeb-Images/kiva-homeHover.png');
